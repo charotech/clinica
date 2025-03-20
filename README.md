@@ -1,1 +1,1 @@
-Propiedad de Charo Technologies, SL.
+Propiedad de Charo Technologies S.L.
