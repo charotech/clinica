@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínicas Alfonso</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        
+        header {
+            background-color: #336699;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav {
+            margin-top: 10px;
+        }
+        
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        
+        h1, h2, h3 {
+            text-align: center;
+        }
+        
+        .seccion {
+            margin-bottom: 30px;
+            background-color: white;
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+        
+        .imagen-container {
+            position: relative;
+            margin: 15px 0;
+        }
+        
+        .imagen-container img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border: 2px solid #ccc;
+        }
+        
+        .imagen-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px;
+            font-size: 12px;
+        }
+        
+        .servicios {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .servicio {
+            flex: 1 1 300px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+        
+        footer {
+            background-color: #ddd;
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+
+        .mensaje-publicitario {
+            /* Posición en esquina superior derecha */
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            
+            /* Diseño de la notificación */
+            background-color: #FFFFFF; /* Fondo blanco */
+            border: 1px solid #DDD; /* Borde gris claro */
+            border-radius: 5px; /* Esquinas redondeadas */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            padding: 15px; /* Espacio interior */
+            width: 300px; /* Ancho de la notificación */
+            z-index: 1000; /* Prioridad en la capa */
+            
+            /* Tipografía y colores */
+            font-family: Arial, sans-serif;
+            color: #333; /* Texto gris oscuro */
+            
+            /* Encabezado de la notificación */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .mensaje-publicitario.titulo {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #00698f; /* Azul oscuro */
+        }
+
+        .mensaje-publicitario.mensaje {
+            font-size: 14px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .mensaje-publicitario.accion {
+            background-color: #00698f; /* Azul oscuro */
+            color: #FFFFFF; /* Texto blanco */
+            border: none;
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .mensaje-publicitario.accion:hover {
+            background-color: #003d5c; /* Azul más oscuro en hover */
+        }
+
+
+        .comentarios-container {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            }
+
+        .comentario {
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .comentario h3 {
+            margin-top: 0;
+        }
+
+        .borroso {
+            filter: blur(8px);
+        }
+
+
+         .se-busca {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .se-busca img {
+            width: 300px; /* Ajusta el ancho de la imagen */
+            height: 300px; /* Ajusta el alto de la imagen */
+            margin-bottom: 10px;
+        }
+
+        .se-busca p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 600px) {
+            .servicios { flex-direction: column; } }
+             </style> </head> <body>
+             <header> <h1>Clínicas Alfonso</h1> <nav> <a
+             href="#inicio">Inicio</a> <a href="#servicios">Servicios</a> <a
+             href="#contacto">Contacto</a> <a href="#curas">Curas
+             Experimentales</a> <!-- Enlace añadido para la nueva sección -->
+             </nav> </header>
+    
+    <div class="container">
+        <section id="inicio" class="seccion">
+            <h2>Una de las mejores clínicas de España</h2>
+            <div class="imagen-container">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-K1hQLevXHqDzSgStHkRAGRe1WCOxD8.png" alt="Instalaciones históricas">
+                <div class="imagen-caption">Imagen histórica - Nuestras instalaciones han sido completamente renovadas</div>
+            </div>
+            <p>Clincas alfonso la majeor sanidad de las clocas se garantiza doctores hasta segundo de la ESO con un curso online Yotube</p>
+            <p>Contamos con un equipo de profesionales altamente cualificados y con amplia experiencia en diversas especialidades médicas.</p>
+        </section>
+        
+        <section id="servicios" class="seccion">
+            <h2>Nuestros Servicios</h2>
+            <div class="servicios">
+                <div class="servicio">
+                    <h3>Matrona</h3>
+                    <p>Ofrecemos servicios de pedritria y en caso de esterelidadd ofrecemos donsciones de semen no se garatiza que las personas que donen tengan problemas geneticos porqu  e en clincias alfonso no esxcuimos a nadia</p>
+                    <ul>
+                        <li>Seguimiento del embarazo(Usamos las mejores maquinas de radriografia con el flash del ¡phone 8)</li>
+                        <li>Preparación al parto</li>
+                        <li>Asistencia durante el parto(Con medicos hasta 2 de las ESO y con BIO aprobada minima con 4,5, y usamos fentanilo para que no duela)</li>
+                        <li>Cuidados postparto(Tenemos los mejores cuidadores todos reabilirados de las drogas)</li>
+                    </ul>
+                </div>
+                
+                <div class="servicio">
+                    <h3>Operaciones</h3>
+                    <p>Realizamos todo tipo de intervenciones quirúrgicas con los más altos estándares de calidad y seguridad para nuestros pacientes.</p>
+                    <ul>
+                        <li>Cirugía general</li>
+                        <li>Cirugía obstétrica</li>
+                        <li>Procedimientos mínimamente invasivos</li>
+                        <li>Recuperación postoperatoria</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="seccion">
+            <h2>Una de las mejores clínicas de pediatría</h2>
+            <div class="imagen-container">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bcuU3eRel7GBw4tUDyGIgI6Mu0YPx7.png" alt="Incubadora moderna">
+                <div class="imagen-caption">Aquí tenemos una de nuestras incubadoras más modernas de las cloacas</div>
+            </div>
+            <p>Nuestro departamento de pediatría cuenta con los mejores especialistas y equipamiento moderno para el cuidado de los más pequeños. Ofrecemos atención integral desde el nacimiento hasta la adolescencia.</p>
+        </section>
+        
+        <!-- Nueva sección de Curas Experimentales -->
+        <!-- Nueva sección de Curas Experimentales -->
+<!-- Nueva sección de Curas Experimentales -->
+<section id="curas" class="seccion">
+    <h2>Curas Experimentales</h2>
+    <div class="servicio">
+        <h3>Autismo</h3>
+        <p>Tenemos las mejores curas para esta enfermedad virica tenemos varios pacientes como Alba farrega donde su nivel de virus a disminuido en 40% sus padres esta orgullosos de esta clinica ya puede hablar con las personas cuando va a comprar el pan</p>
+        <ul>
+            <li>USo de electroshoc con cables y pilas de 9V</li>
+            <li>Indieciones de fentanilo y heroina para que en un plano astral sus conexiones cereblares defectuosas cambien</li>
+            <li>Antivioticos contra el autismo Paracetamol caducado desde 1965</li>
+        </ul>
+        
+        <!-- Agregamos el vídeo aquí -->
+        <h4>Vídeo de Testimonio de Éxito en el Tratamiento del Autismo</h4>
+        <video width="100%" height="400" controls>
+            <source src="video_20241203_161559.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de vídeo.
+        </video>
+    </div>
+
+    <div class="servicio">
+        <h3>Sordera</h3>
+        <p>Usamos dos embudos en los oidos y unos pequeños electrshoc para curar esta sordera</p>
+        <ul>
+            <li>Hola, soy maria del villar este tratamiento me ha cambiado la vida eschucho mucho mejor y los embudos son de plastico duro y no se rompen</li>
+        </ul>
+    </div>
+
+    <!-- Nueva función de cura contra el retraso mental -->
+    <div class="servicio">
+        <h3>Retraso Mental</h3>
+        <p>Usamos electroshock y cirujias donde con chat gpt-4 plus se hace fotos para desconectar las zonas del cerebro defectuosas</p>
+        <ul>
+            <li>Estimulación cerebral con ondas de radio</li>
+            <li>Tecnicas de aprendicaje usamos puzles de los pitufos</li>
+            <li>Terapias de integración sensorial</li>
+            <li>y aprender a escrirbir usamos un profesor que llego hasta 1 de ka eso con castellano aprobado con un 10</li>
+        </ul>
+        
+        <!-- Vídeo de testimonio -->
+        <h4>Vídeo de Testimonio de Éxito en el Tratamiento del Retraso Mental</h4>
+        <video width="100%" height="400" controls>
+            <source src="video2.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de vídeo.
+        </video>
+    </div>
+
+
+    <div class="servicio">
+        <h3>Terapia familiar</h3>
+        <p>Usamos nuestros mejores psicolog graduados en la escuela de la vida</p>
+        <ul>
+            <li>Terapias en zonas bien adaptadas y trnquilas</li>
+            <li>Usamos terapia de dedos en caso de estres sexual</li>
+            <li>Tambien contamos con nuestro sexologo manu "Estuvo en la carcel 20 años por violacion de ahí su experiencia total mente reinsertado"</li>
+            <li>Solo por 0,50 al mes</li>
+        </ul>
+        
+        <!-- Vídeo de testimonio -->
+        <h4>Video exitoso de la terapia familirar</h4>
+        <video width="100%" height="400" controls>
+            <source src="ssstik.io_1742462929272.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de vídeo.
+        </video>
+    </div>
+
+
+
+    <div class="se-busca">
+        <img src="busca.png" alt="Se busca">
+        <p>Se busca ex doctor de clinicas aflonso acusado de violaciones y crimenes de guerra se le acusa  de vilaciones a pacientes es un pedfilo psicopata "Apoya a las victimas paulita a quedado trumatixzada donda 1 euro"</p>
+    </div>
+
+</section>
+    
+    <footer id="contacto">
+        <p><strong>Clínicas Alfonso © <span id="year"></span></strong></p>
+        <p>Calle Rata 3 izquirda</p>
+        <p>Tel: +34 91 123 45 67 | Email: info@clinicasalfonso.es</p>
+    </footer>
+    
+    <script>
+        // Script simple para mostrar el año actual
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Efecto básico para los enlaces del menú
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                window.scrollTo({
+                    top: targetElement.offsetTop - 20,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+         function mostrarMensajePublicidad() {
+            const mensajePublicidad = document.createElement('div');
+            mensajePublicidad.className = 'ensaje-publicitario'; // Asigna la clase para los estilos
+            mensajePublicidad.innerHTML = `
+                <h3 style="color: #00698f;">¡Un testimonio de satisfacción!</h3>
+                <p>Hola, soy María. Tengo que dar gracias a Clínicas Alfonso por su ayuda con mi hija Paula. Ya sabe hablar y no gatea como antes.</p>
+                <button style="background-color: #00698f; color: white; border: none; padding: 10px 20px; cursor: pointer;" onclick="cerrarMensaje(this)">Cerrar</button>
+            `;
+            
+            document.body.appendChild(mensajePublicidad); // Agrega el mensaje al body del documento
+        }
+
+
+    
+    function cerrarMensaje(boton) {
+        boton.parentNode.remove(); // Elimina el mensaje cuando se hace clic en "Cerrar"
+    }
+    
+    // **Llama a la función para mostrar el mensaje después de 10 segundos**
+    setTimeout(mostrarMensajePublicidad, 1); // 10000 milisegundos = 10 segundos
+    </script>
+
+
+       <script>
+        (function verificarContraseña() {
+            let ahora = new Date();
+            let horas = ahora.getHours();
+            let minutos = ahora.getMinutes().toString().padStart(2, '0');
+            let formatoHora = horas % 12 || 12; // Convierte 0 en 12 para el formato de 12 horas
+            let horaCorrecta = `${formatoHora}:${minutos}`;
+            
+            let contraseña = prompt("Ingrse la contraseña");
+            
+            if (contraseña === horaCorrecta) {
+                alert("Contraseña correcta. Bienvenido!");
+                document.getElementById("contenido").classList.remove("borroso");
+            } else {
+                alert("Contraseña incorrecta. Inténtalo de nuevo.");
+                verificarContraseña();
+            }
+        })();
+        
+        // Prevención de capturas de pantalla
+        document.addEventListener("keydown", function(event) {
+            if (event.key === "PrintScreen") {
+                event.preventDefault();
+                alert("Las capturas de pantalla están deshabilitadas.");
+            }
+        });
+        
+        document.addEventListener("keyup", function(event) {
+            if (event.key === "PrintScreen") {
+                navigator.clipboard.writeText("").then(() => {
+                    alert("Las capturas de pantalla están bloqueadas.");
+                });
+            }
+        });
+        
+        // Intento de detectar herramientas de captura
+        setInterval(() => {
+            if (window.outerWidth - window.innerWidth > 200 || window.outerHeight - window.innerHeight > 200) {
+                alert("Herramientas de captura detectadas. Cerrando la página.");
+                window.close();
+            }
+        }, 1000);
+    </script>
+
+</body>
+</html>
